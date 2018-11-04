@@ -13,7 +13,7 @@ switch(argv._[0]){
         break;
     case'Guardar':
         multiplicar.crearArchivo(base, limite) 
-            .then((archivo) =>  console.log("Archivo creado: " + colors.green("%s"),archivo)) 
+            .then((archivo) =>  console.log(`Archivo creado: ${archivo.green}`)) 
             .catch((err) => console.log(colors.red(err)));
         break;
     default: console.log(colors.red("Comando inválido"));
